@@ -1,0 +1,91 @@
+<!--start-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+<meta name="Description" content="An indie game blog about life tech and games and going to events with lots of class. 
+Authors: <!-- Author Name -->, Seva Vodonenko"/>
+<meta name="Keywords" content="blog,video,games,ps3,xbox,360,wii,programming"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="shortcut icon" href="http://www.joyblind.com/images/mascottIcon.ico">
+<link rel="stylesheet" href="css/default.css" type="text/css"/>
+<link rel="stylesheet" href="css/sidebar.css" type="text/css"/>
+<link rel="stylesheet" href="css/headers.css" type="text/css"/>
+<link href="css/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/>
+
+<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
+<script language="javascript" src="js/jquery.tweet.js" type="text/javascript"></script> 
+<script language="javascript" src="js/util.js" type="text/javascript"></script> 
+
+<title>TITLE</title>
+
+</head>
+
+<body>
+
+<!--  HEADER  -->
+<div class="header">
+<script type="text/javascript" src="js/header.js"></script>
+
+<!--  SIDEBAR  -->
+<div class="sidebar" href="css/links.css">
+<script type="text/javascript" src="js/sidebar.js"></script>
+</div>
+
+<!--  CONTENT  -->
+<div class="content">
+
+
+	<!--  title  -->
+<div style="margin: 10px 0 0 5px;"><img style="margin-right:5px" src="images/<!-- thumb_author -->" align="left" /><div class="titleBlock">TITLE</div><div class="byBlock"> By: <!-- Author Name --> - DDD, DD MM YYYY XX:XX </div> <br /></div>
+
+		<!--Main picture without link-->
+<p style="text-align:center;"><img src="images/1XXXXXXX.jpg" class="frame"/></p>
+
+<!--insert here 1-->
+
+	<!--  Direct Link  -->
+<p style="text-align:center;"><input size="30" type="text" id="txtfld" onClick="SelectAll('txtfld');" value = "http://www.joyblind.com/1XXXXXXX.html" /></p>
+
+	<!--  COMMENTS  -->
+<div class="js-kit-comments" backwards="yes" paginate="10"></div>
+<script src="http://js-kit.com/comments.js"></script>
+<!-- Extras -->
+	<!--  title  -->
+<div style="margin: 10px 0 0 5px;"><img style="margin-right:5px" src="images/<!-- thumb_author -->" align="left"  /><div class="titleBlock"><a style="color:black;" href="1XXXXXXX.html" target="_self">TITLE</a></div><div class="byBlock"> By: <!-- Author Name --> - DDD, DD MM YYYY XX:XX </div> <br /></div>
+
+		<!--Main picture with link-->
+<p style="text-align:center;"><a href="1XXXXXXX.html"><img src="images/1XXXXXXX.jpg" class="frame"/></a></p>
+
+<!--insert here 2-->
+
+<p style="position:relative; left:25px;"><a href="1XXXXXXX.html">Read More...</a><p>
+<hr />
+
+<!--Articles-->
+	<!--Archive-->
+<div style="padding:10px 0 0 0;"><div class="titleBlock"><a style="color:black;" href="1XXXXXXX.html" target="_self">TITLE</a></div><div class="byBlock"> By: <!-- Author Name --> - DDD, DD MM YYYY XX:XX </div></div>	
+	
+<p><a href="1XXXXXXX.html"><img src="images/thumb_1XXXXXXX.jpg" align="left" style="padding:2px; border-style:solid; border-width:2px; border-color:#ffffff;" /></a><!--BLURB--></p>
+
+<!--End Archive-->
+<!--items-->
+	<item>
+		<title>TITLE</title>
+		<description>
+			<![CDATA[<a  href=http://www.joyblind.com/1XXXXXXX.html target=_blank><img src='http://www.scs.carleton.ca/people/~ugorelik/images/1XXXXXXX.jpg' alt='TITLE' style="margin: 0 15px 15px 0; padding:5px 5px 5px 5px; border: 1px solid #aaa; width: 160px; height:120px; float:left;" height=120 width=160 /></a>
+<!--insert here 3-->
+			<p><a href=http://www.joyblind.com/1XXXXXXX.html target=_blank> Read More -></a></p>]]>
+		</description>
+		<link>http://www.joyblind.com/1XXXXXXX.html</link>
+		<guid>http://www.joyblind.com/1XXXXXXX.html</guid>
+		<pubDate>DDD, DD MM YYYY XX:XX EST</pubDate>
+	</item>
+<!--End Rss-->
+
+</div>
+</div>
+</body>
+</html>

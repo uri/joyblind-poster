@@ -136,6 +136,9 @@ public class Article {
         
         ArrayList<String> returning = new ArrayList<String>();
         
+        // In-case there is no backslash
+        s += "\n";
+        
         String[] temp = s.split("\n");
         
         int numPara = 0;

@@ -37,6 +37,7 @@ public class Poster extends JFrame implements ActionListener, DocumentListener {
     public static int HEIGHT = 375; // was 700
     public static String nameofProg = "JOYBLIND Poster " + PosterModel.VERSION + " By: Uri Gorelik";
     public static String SAVE_PATH = "";
+    public static String PATCH_NOTES = "\nCan now make really short posts. Also added an alert for when the poster is done.\nIf no save location is selected uses local.";
     public static boolean newSavePath = false;
 
     private BasicView theView;
@@ -62,7 +63,7 @@ public class Poster extends JFrame implements ActionListener, DocumentListener {
         // Thanks the user for updating
         if (args.length > 1) {
             JOptionPane.showMessageDialog(null, 
-                    "What's new in " + PosterModel.VERSION + "\nAdded http:// to the beginning of the direct Links.",
+                    "What's new in " + PosterModel.VERSION + PATCH_NOTES,
                     "Update Successful", JOptionPane.INFORMATION_MESSAGE);
         }
     }
@@ -200,6 +201,7 @@ public class Poster extends JFrame implements ActionListener, DocumentListener {
             int returnVal = chooser.showOpenDialog(this);
             if(returnVal == JFileChooser.APPROVE_OPTION) {
               
+                // TODO: Removed the aditiona file separtor.
                 SAVE_PATH = chooser.getSelectedFile().getAbsolutePath() + File.separator;
                 newSavePath = true;
             }
@@ -240,7 +242,7 @@ public class Poster extends JFrame implements ActionListener, DocumentListener {
         }
         
         // Too short 
-        else if (paragraphs.length() < 168){                          
+        else if (paragraphs.length() < 5){                          
             JOptionPane.showMessageDialog(this,
                     "Make a twitter post instead.",
                     "Article too Short", JOptionPane.ERROR_MESSAGE);
@@ -271,6 +273,9 @@ public class Poster extends JFrame implements ActionListener, DocumentListener {
             }
             
             model.generateAllFiles();
+            JOptionPane.showMessageDialog(this, 
+                    "Post is ready!",
+                    "Done!", JOptionPane.INFORMATION_MESSAGE);
         } 
         
         // Generate Template
@@ -287,6 +292,7 @@ public class Poster extends JFrame implements ActionListener, DocumentListener {
                 model.loadAssets(theView.getToArchiveCheckBox().isSelected(), new Article(title, paragraphs,numberOfParagraphs, author));
             }
             model.generateTemplate();
+
         }
         
         // Reset the model here.
